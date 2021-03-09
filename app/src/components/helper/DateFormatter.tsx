@@ -30,7 +30,7 @@ class DateFormatter extends React.PureComponent<Props, {}> {
 
   private localizedDate(locale: string) {
     return moment(this.props.date)
-      .locale(locale)
+      .locale("ru")
       .format(this.props.timeFirst ? 'LTS L' : 'L LTS')
   }
 
